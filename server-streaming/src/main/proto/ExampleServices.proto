@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package ru.denisaql.grpc;
+
+option java_multiple_files = true;
+
+message MetricBundle {
+    google.protobuf.Timestamp timestamp = 1;
+    int64 metric = 2;
+}
+
+message Average {
+    double val = 1;
+}
+
+// stream from client to server
+service MetricsService {
+    rpc collect(stream MetricBundle) returns (Average);
+}
+
+message GetVideoRequest {
+    string title = 1;
+}
+
+message VideoFrame {
+    bytes content = 1;
+}
+
+service VideoService {
+    rpc subscribeToVideo(GetVideoRequest) returns (stream VideoFrame) {}
+}
+
+/*
+https://dev.bitolog.com/grpc-long-lived-streaming/
+ */

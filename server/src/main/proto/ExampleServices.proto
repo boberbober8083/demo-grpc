@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package ru.denisaql.grpc;
+
+option java_multiple_files = true;
+
+message HelloRequest {
+    string name = 1;
+    int32 age = 2;
+    repeated string phones = 3;
+}
+
+message HelloResponse {
+    string greeting = 1;
+}
+
+message LevelUpRequest {
+    string name = 1;
+    int32 currentLevel = 2;
+}
+
+message LevelUpResponse {
+    string name = 1;
+    int32 newLevel = 2;
+    optional int32 emptyField = 3;
+}
+
+// request/response
+service GreetingService {
+    rpc greeting(HelloRequest) returns (HelloResponse);
+}
+
+// request/response
+service LevelUpService {
+    rpc levelUp(LevelUpRequest) returns (LevelUpResponse);
+}
