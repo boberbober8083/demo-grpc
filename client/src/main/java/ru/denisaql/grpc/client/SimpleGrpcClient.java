@@ -54,7 +54,6 @@ public class SimpleGrpcClient {
             .build();
 
     LevelUpResponse resp = stub.levelUp(request);
-    Map<Descriptors.FieldDescriptor, Object> descriptorObjectMap = resp.getAllFields();
-    System.out.println(resp);
+    System.out.println(resp.getName());
   }
 }
