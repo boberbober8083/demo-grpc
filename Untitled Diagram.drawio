@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-31T15:00:19.028Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="Q_tlm12t7LVy_7bsoJXb" version="23.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-31T15:00:31.161Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="se4NgtfvVfAYonyjHu0b" version="23.0.2" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="1828" dy="1746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -9,6 +9,9 @@
         </mxCell>
         <mxCell id="EdQMsLGex-M8eLgxuqMr-18" value="&lt;div&gt;&lt;div&gt;Функциональные требования:&lt;/div&gt;&lt;div&gt;1) Требуется разработать систему трекинга для поддержки службы доставки;&lt;/div&gt;&lt;div&gt;2) Всего 300 000 курьеров доставляющих заказы в системе;&lt;/div&gt;&lt;div&gt;3) 100 операторов одновременно отслеживающих перемещения на карте, имеют возможность отслеживать всех курьеров,&amp;nbsp;&lt;/div&gt;&lt;div&gt;находящихся на заданном участке карты. Могут переключаться между разными участками карты;&lt;/div&gt;&lt;div&gt;4) Должна быть возможность получить все перемещения каждого из курьеров за любой период.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Нефункциональные требования&lt;/div&gt;&lt;div&gt;1) Задержка отслеживания перемещения курьера должна составлять не более 15 секунд.&lt;/div&gt;&lt;div&gt;2) Операторы должны иметь актуальную информацию с точностью не хуже 1 минута.&lt;/div&gt;&lt;div&gt;3) Запросы по каждому отдельному курьеру должны отрабатывать не хуже чем 30 секунд за произвольный диапазон времени,&amp;nbsp;&lt;/div&gt;&lt;div&gt;не хуче 5 секунд за последнюю неделю.&lt;/div&gt;&lt;div&gt;4) Данные о треках должны быть доступны в течении года.&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontSize=20;fontFamily=Architects Daughter;" vertex="1" parent="1">
           <mxGeometry x="-790" y="-1160" width="780" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="EdQMsLGex-M8eLgxuqMr-20" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="-640" width="60" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
